@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1.0">
+        <meta name="keywords" content="BartonPC, Informatica, Computacion, Computadora, Gaming, Tecnologia, Gamer, Barton, Mouse, USB">
+        <title>Barton PC - Mouse</title>
+        <meta name="description" content="¡Conectate con Barton! Barton PC, todo en ventas y servicio tecnico para tu PC/Notebook y mucho mas.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../style/estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+
+
+    <body>
+        <div id="contenedorGridArea_mouse">
+            <header>
+                <h1>Barton PC</h1>
+                <div id="contenedorHeader">
+                    <div id="barraRedes">
+                        <ul class="socialBarra">
+                            <li><a href="tel:+5491126637130" name="Whatsapp" aria-label="whatsapp"><i class="bi bi-whatsapp" aria-label="whatsapp"></i></a></li>
+                            <li><a href="https://www.facebook.com/bartonpc" name="Facebook" aria-label="facebook"><i class="bi bi-facebook" aria-label="facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/bartonpc_computacion/?hl=es-la" name="Instagram" aria-label="instagram"><i class="bi bi-instagram" aria-label="instagram"></i></a></li>
+                            <li><a href="https://bit.ly/google-barton" name="Google" aria-label="google"><i class="bi bi-google" aria-label="google"></i></a></li>
+                        </ul>
+                        <div class="carritoLoginHeader">
+                            <div class="iconoCarrito">
+                                <button type="button" id="botonCarrito" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="boton para acceder al carrito de compras">
+                                    <i class="bi bi-cart3" aria-label="Icono de Compra, muestra un carrito, al hacer click muestra tus compras"></i>
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h2 class="modal-title" id="exampleModalLabel">¡Bienvenido a tu carrito!</h2>
+                                          <button type="button" id="cerrarCarrito" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body" id="carritoDeCompras"></div>
+                                        <div class="row ml-ato">
+                                            <p id="precioTotalCarrito"></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" id="botonSeguirEnTienda" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="cerrar carrito de compras">Seguir en tienda</button>
+                                          <button type="button" id="botonFinalizarCompra" class="btn btn-primary" aria-label="comprar productos en carritos">Finalizar compra</button>
+                                          <div id="compraFinalizada"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="iconoLogin">
+                                <a href="../paginas/login.html" aria-label="login"><i class="bi bi-person-circle" aria-label="Icono de Login, al hacer click podras iniciar sesion o registrarte"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="segundoLogoBarton">
+                        <a href="../index.html" aria-label="segundo logo"><img src="../logo/barton_pc_logo_blanco_y_azul-min.png" alt="Logo de Barton PC, en color azul y blanco, tiene un mundo digital y abajo dice el nombre, al hacer click conduce a la pagina principal"></a>
+                    </div>
+                    <div class="buscadorHeader">
+                        <div class="container-fluid">
+                          <form class="d-flex">
+                            <a id="buscador" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" aria-label="enlace para abrir el buscador"><input class="form-control me-2" type="text" placeholder="Buscador" aria-label="Buscador" readonly="readonly"></a>
+                            <button id="buscadorBoton" class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" aria-label="buscador"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
+                          </form>
+                        </div>
+                    </div>
+                    <div id="menuBurger">
+                        <button type="button" class="btn-burger btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-label="menu desplegable">
+                            <i class="bi bi-list" aria-label="menu hamburguesa"></i>
+                        </button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg" aria-label="cerrar"></i></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <nav id="navBurger">
+                                            <ul class="menuFlex hoverNav">
+                                                <li><a href="../paginas/productos.html"><img src="../iconos/icono_masproductos_azul-min.png" alt="icono que indica mas, al hacer click prodra ver las categorias de productos que ofrece Barton PC">Productos</a></li>
+                                                <li><a href="../paginas/quienessomos.html"><img src="../iconos/icono_quienessomos_azul-min.png" alt="icono quienes somos, al hacer click podras conocer mas sobre Barton PC">Quienes somos</a></li>
+                                                <li><a href="../paginas/contacto.html"><img src="../iconos/icono_contacto_azul-min.png" alt="icono de contacto, al hacer click podras hacernos una consulta o dejar un comentario, tambien saber nuestra direccion y como contactarnos">Contacto</a></li>
+                                                <li><a href="../paginas/tel:+541149578377"><img src="../iconos/icono_llamada_azul-min.png" alt="icono de llamada, al hacer click podras realizar una llamada a Barton PC">Llamar</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <aside id="buscadorBarra">
+                <div class="collapse contenedorBusquedas" id="collapseExample">
+                    <ul id="busquedas">
+                    </ul>
+                </div>
+            </aside>
+
+            <nav id="menu" class="navFlotante">
+                <ul class="menuFlex hoverNav">
+                    <li><a href="../paginas/productos.html"><img src="../iconos/icono_masproductos_azul-min.png" alt="icono que indica mas, al hacer click prodra ver las categorias de productos que ofrece Barton PC">Productos</a>
+                        <ul>
+                            <li id="seccion1"><a href="auricular.html">Auriculares</a></li>
+                            <li id="seccion2"><a href="disco.html">Discos</a></li>
+                            <li id="seccion3"><a href="#contenedorGridArea_mouse">Mouse</a></li>
+                            <li id="seccion4"><a href="parlante.html">Parlantes</a></li>
+                            <li id="seccion5"><a href="teclado.html">Teclados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../paginas/quienessomos.html"><img src="../iconos/icono_quienessomos_azul-min.png" alt="icono quienes somos, al hacer click podras conocer mas sobre Barton PC">Quienes somos</a></li>
+                    <li><a href="../paginas/contacto.html"><img src="../iconos/icono_contacto_azul-min.png" alt="icono de contacto, al hacer click podras hacernos una consulta o dejar un comentario, tambien saber nuestra direccion y como contactarnos">Contacto</a></li>
+                    <li><a href="tel:+541149578377"><img src="../iconos/icono_llamada_azul-min.png" alt="icono de llamada, al hacer click podras realizar una llamada a Barton PC">Llamar</a></li>
+                </ul>
+            </nav>
+        
+
+            <section id="subtitulo">
+                <h2>MOUSE</h2>
+            </section>
+
+
+            <section id="navFiltros">
+                <div class="principioFiltro">
+                    <h3>Mouse</h3>
+                    <div class="ordenadoresFiltro">
+                        <button type="button" aria-label="boton para cambiar a grilla" id="botonAccionGrillaMouse"><i class="bi bi-layout-three-columns" id="botonGrillaMouse"></i></button>
+                        <button type="button" aria-label="boton para cambiar a lista" id="botonAccionListaMouse"><i class="bi bi-layout-text-sidebar-reverse" id="botonListaMouse"></i></button>
+                    </div>
+                </div>
+                <div class="filtrosProductos">
+                    <div id="filtroSubcategoria" class="filtrosProductosSegun">
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseGamers" class="seleccionFiltro">Mouse Gamers</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseUsb" class="seleccionFiltro">Mouse USB</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseInalambricos" class="seleccionFiltro">Mouse Inalambricos</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMousePad" class="seleccionFiltro">Mouse-Pad</button>
+                    </div>
+                </div>
+                <div class="filtrosProductos">
+                    <h4>Marcas</h4>
+                    <div id="filtroMarca" class="filtrosProductosSegun">
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseHyperx" class="seleccionFiltro">Mouse/Pad HyperX</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseLogitech" class="seleccionFiltro">Mouse/Pad Logitech</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseBkt" class="seleccionFiltro">Mouse/Pad BKT</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseGenius" class="seleccionFiltro">Mouse/Pad Genius</button>
+                        <button type="button" aria-label="filtro por categoria de productos" id="filtroMouseMsi" class="seleccionFiltro">Mouse/Pad MSI</button>
+                    </div>
+                </div>
+                <div class="sacarFiltrosProductos">
+                    <div>
+                        <button type="button" aria-label="sacar filtros de productos" id="sacarFiltros">Sacar filtros</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <aside id="catalogo">
+                <div class="contenedorHorizontalProductos" id="productosCatalogoMouseHorizontal"></div>
+                <div class="row contenedorVerticalProductos" id="productosCatalogoMouseVertical"></div>
+            </aside>
+    
+
+            <section id="marcas">
+                <div class="sliderContenedorMarcas">
+                    <div class="slide-track-marcas">
+                        <div class="slideMarcas">
+                            <img src="../marcas/acer_logo-min.png" alt="logo Acer">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/adata_logo-min.png" alt="logo Adata">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/amd_logo-min.png" alt="logo AMD">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/asrock_logo-min.png" alt="logo ASrock">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/asus_logo-min.png" alt="logo Asus">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/brother_logo-min.png" alt="logo Brother">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/cooler_master_logo-min.png" alt="logo Cooler Master">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/corsair_logo-min.png" alt="logo Corsair">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/epson_logo-min.png" alt="logo Epson">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/genius_logo-min.png" alt="logo Genius">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/gigabyte_logo-min.png" alt="logo Gigabyte">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/hp_logo-min.png" alt="logo HP">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/hyperx_logo-min.png" alt="logo HyperX">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/intel_logo-min.png" alt="logo Intel">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/kelyx_logo-min.png" alt="logo Kelyx">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/kingston_logo-min.png" alt="logo Kingston">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/kodak_logo-min.png" alt="logo Kodak">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/lenovo_logo-min.png" alt="logo Lenovo">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/lg_logo-min.png" alt="logo LG">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/logitech_logo-min.png" alt="logo Logitech">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/microsoft_logo-min.png" alt="logo Microsoft">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/msi_logo-min.png" alt="logo MSI">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/nisuta_logo-min.png" alt="logo Nisuta">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/nvidia_logo-min.png" alt="logo Nvidia">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/philips_logo-min.png" alt="logo Philips">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/ryzen_logo-min.png" alt="logo Ryzen">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/samsung_logo-min.png" alt="logo Samsung">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/sandisk_logo-min.png" alt="logo Sandisk">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/seagate_logo-min.png" alt="logo Seagate">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/thermaltake_logo-min.png" alt="logo Thermaltake">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/toshiba_logo-min.png" alt="logo Toshiba">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/tplink_logo-min.png" alt="logo TP-Link">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/verbatim_logo-min.png" alt="logo Verbatim">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/western_digital_logo-min.png" alt="logo Western Digital">
+                        </div>
+                        <div class="slideMarcas">
+                            <img src="../marcas/bangho_logo-min.png" alt="logo Bangho">
+                        </div>
+                    </div>
+                </div>
+            </section>   
+
+            <footer>
+                <div class="accesosNegocioFooter">
+                    <div class="ubicacionNegocioFooter">
+                        <p class="ubicacionFooter">UBICACION</p>
+                        <p class="galeriaUbicacionFooter">Galeria San Juan y Boedo, Local 47 y 48:</p>
+                        <ul class="listaAccesosFooter">
+                            <li>Av. San Juan 3625, Boedo, Buenos Aires (CABA), Argentina.</li>
+                            <li>Av. Boedo 969, Boedo, Buenos Aires (CABA), Argentina.</li>
+                        </ul>
+                    </div>
+                    <div class="horarioDeAtencionFooter">
+                        <p class="horarioFooter">HORARIOS</p>
+                        <ul class="listaAccesosFooter">
+                            <li>Lun. a Vie. de 11hs a 19hs</li>
+                            <li>Sab. de 11hs a 17hs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contactosFooter">
+                    <div>
+                        <ul class="listaContactosFooter">
+                            <li class="mailContactoFooter"><a href="mailto:info@bartonpc.com.ar"><img src="../iconos/icono_email-min.png" alt="icono de email, al hacer click podras mandar un email a Barton PC" class="tamañoIconoContactosFooter">info@bartonpc.com.ar</a></li>
+                            <li class="llamarContactoFooter"><a href="tel:+541149578377"><img src="../iconos/icono_llamada-min.png" alt="icono de llamada, al hacer click podras realizar una llamada a Barton PC" class="tamañoIconoContactosFooter">Llamar</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="listaContactosFooter redesFooter">
+                            <li><a href="https://www.facebook.com/bartonpc" aria-label="facebook"><img src="../iconos/icono_facebook-min.png" alt="icono de facebook, al hacer click podras ir a la pagina de facebook de Barton PC" class="tamañoIconoFacebookFooter"></a></li>
+                            <li><a href="https://www.instagram.com/bartonpc_computacion/?hl=es-la" aria-label="instagram"><img src="../iconos/icono_insta-min.png" alt="icono de insta, al hacer click podras ir al instagram de Barton PC" class="tamañoIconoInstagramFooter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyDesarrolloFooter">
+                    <div class="copyrightFooter">
+                        <p>Copyright © Barton PC. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="desarrolladorFooter">
+                        <a href="https://www.instagram.com/totoceraldi/">Desarrollo<img src="../logo/logo_tc-min.png" alt="logo del desarrollador, contiene una T y una C, al hacer click iras a la pagina de contacto del desarrollador"></a>
+                    </div>
+                </div>
+                <div class="irArribaFooter">
+                    <a href="#contenedorGridArea_mouse" aria-label="ir arriba"><img src="../iconos/icono_arriba-min.png" alt="icono con flecha hacia arriba, permite volver al principio de la pagina" class="tamañoIconoArribaFooter"></a>
+                </div>
+            </footer>
+        </div>
+    
+
+        <aside id="iconoWhatsappFlotante" class="animate__animated animate__zoomIn">
+            <button type="button">
+                <a href="tel:+5491126637130" aria-label="whatsapp"><img src="../iconos/icono_whatsapp_verde-min.png" alt="icono de whatsapp, al hacer click podras ir al whatsapp de Barton PC" class="tamañoIconoWhatsappFlotante"></a>
+            </button>
+        </aside>
+
+        <hr id="barraDeColor">
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../js/script_funciones_bartonpc.js"></script>
+        <script src="../js/script_bartonpc_general.js"></script>
+        <script src="../js/script_productos_bartonpc.js"></script>
+        <script src="../js/script_carrito_bartonpc.js"></script>
+    </body>
+</html>
